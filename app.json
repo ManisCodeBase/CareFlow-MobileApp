@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "CareFlow",
+    "slug": "careflow",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/Care_flow_logo.jpg",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/Care_flow_logo.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.manifordev.careflow"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/Care_flow_logo.jpg",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "package": "com.careflow.mobileapp"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/Care_flow_logo.jpg"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://careflow.app"
+        }
+      ],
+      "expo-localization",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": "https://careflow.app"
+      },
+      "eas": {
+        "projectId": "2721d82e-bafa-4585-aec1-b6ed881c3dcf"
+      }
+    }
+  }
+}
